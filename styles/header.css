@@ -22,3 +22,27 @@
   border-inline: none ;
   justify-content: space-between;
 }
+
+@media (max-width: 768px) {
+  #secondary {
+    overflow-x: auto;
+    scrollbar-width: none;
+    justify-content: start;
+    gap: 24px;
+  }
+
+  #secondary::-webkit-scrollbar {
+    display: none;
+  }
+
+  #secondary a {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  #primary div:nth-child(1) strong,
+  #primary div:nth-child(3) strong {
+    display: none;
+  }
+}

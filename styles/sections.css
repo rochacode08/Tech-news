@@ -119,3 +119,62 @@ aside {
     object-fit: cover;
   }
 }
+
+@media (max-width: 1024px) {
+  #featured {
+    grid-auto-flow: row;
+  }
+
+  #featured > figure {
+    height: 380px;
+  }
+
+  #featured > figure img {
+    height: 100%;
+    width: 100%;
+  }
+
+  #featured .grid-cols-2 img {
+    height: 140px;
+    width: 100%;
+  }
+
+  #weekly > div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #weekly img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  #featured > figure {
+    height: 260px;
+  }
+
+  #featured .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  #featured .grid-cols-2 img {
+    height: 180px;
+  }
+
+  #weekly > div {
+    grid-template-columns: 1fr;
+  }
+
+  #weekly img {
+    height: 200px;
+  }
+
+  #ai article {
+    grid-auto-flow: row;
+  }
+
+  #ai img {
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}

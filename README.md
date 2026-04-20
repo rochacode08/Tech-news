@@ -4,7 +4,7 @@
 
 ## 📸 Preview
 
-![Preview do projeto](./assets/preview.png) 
+![Preview do projeto](./assets/images/preview.png) 
 
 ## 🚀 Demonstração
 
